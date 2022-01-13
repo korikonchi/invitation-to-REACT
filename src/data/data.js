@@ -77,6 +77,13 @@ export const DataProps = {
     phwishes: 'Mandanos tus deseos',
     btnsubmit: 'enviar',
   },
+  gifttable: {
+    title: 'Mesa De Regalos',
+    icon: 'engagementRing',
+    paragraph: ['Liverpool- Boda Israel y Jessica', '# Evento-50755093'],
+    link: 'https://mesaderegalos.liverpool.com.mx/milistaderegalos/50755093',
+    textLink: 'ver mesa',
+  },
 }
 
 export default DataProps

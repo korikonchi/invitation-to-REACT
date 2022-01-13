@@ -7,6 +7,7 @@ import {
   Collage,
   CardLocation,
   MessageArea,
+  GiftTable,
 } from './components'
 import DP from './data/data'
 import './App.css'
@@ -21,6 +22,7 @@ function App() {
       <Collage {...DP.collage} />
       <MessageArea {...DP.messagearea} />
       <CardLocation {...DP.cardLocation} />
+      <GiftTable {...DP.gifttable} />
     </div>
   )
 }
