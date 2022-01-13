@@ -1,20 +1,40 @@
 import React from 'react'
-import Icon from '../icon/Icon'
-export function CardLocation({ title, icon, link, textLink, paragraph }) {
+import { Icons } from '../../assets/icons'
+export function CardLocation({
+  title,
+  link,
+  textLink,
+  paragraph,
+  icon,
+  phname,
+  phwishes,
+  btnsubmit,
+}) {
   return (
     <div>
       <h2 className="title">{title}</h2>
-      {icon && (
-        <figure>
-          <Icon i={icon} />
-        </figure>
-      )}
+      {icon && Icons.engagementRing}
+
       {paragraph.map((text, i) => (
         <TextItem key={i} text={text} />
       ))}
-      <a className="" target="_blank" href={link}>
-        {textLink}
-      </a>
+      {link && (
+        <a className="" target="_blank" href={link}>
+          {textLink}
+        </a>
+      )}
+      <form action="">
+        {phname && <input type="text" placeholder={phname} />}
+      </form>
+      {phwishes && (
+        <textarea
+          placeholder={phwishes}
+          name="wish"
+          id="textarea"
+          maxLength={1000}
+        ></textarea>
+      )}
+      {btnsubmit && <input className="" type="submit" value={btnsubmit} />}
     </div>
   )
 }

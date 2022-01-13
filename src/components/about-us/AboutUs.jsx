@@ -1,19 +1,17 @@
 import React from 'react'
-import Icon from '../icon/Icon'
+import { Icons } from '../../assets/icons'
 
 export function AboutUs({ cardProfile }) {
-  console.log(cardProfile)
-
   return (
     <div>
-      {cardProfile.map(({ id, ...others }) => (
-        <CardItem key={id} {...others} />
+      {cardProfile.map(({ ...others }) => (
+        <CardItem key={others.id} {...others} />
       ))}
     </div>
   )
 }
 
-const CardItem = ({ title = '', imagUrl = '', icon = '', message = '' }) => {
+const CardItem = ({ title, imagUrl, message, icon }) => {
   return (
     <>
       <h2 className="">{title}</h2>
@@ -23,7 +21,8 @@ const CardItem = ({ title = '', imagUrl = '', icon = '', message = '' }) => {
         </figure>
       )}
       <p className="">{message}</p>
-      {icon && <Icon i={icon} />}
+
+      {icon && <figure>{Icons.heart}</figure>}
     </>
   )
 }

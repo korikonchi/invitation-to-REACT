@@ -20,7 +20,7 @@ export const DataProps = {
       title: 'him',
       imagUrl:
         'https://assets.digitalvilla.ca/images/issra-jess/isrra-profile.jpg',
-      icon: '',
+      icon: null,
       message:
         'Es cierto que el amor no se busca, llega cuando menos lo esperas y de pronto apareciste y supe que quería pasar mi vida a tu lado.',
     },
@@ -29,7 +29,7 @@ export const DataProps = {
       title: 'her',
       imagUrl:
         'https://assets.digitalvilla.ca/images/issra-jess/jess-profile.jpg',
-      icon: '',
+      icon: null,
       message:
         'Tanto tiempo soñando con este gran día pero faltaba mi compañero, mi amigo, mi cómplice, faltabas tú… Nos espera la mejor aventura de nuestras vidas!',
     },
@@ -66,6 +66,16 @@ export const DataProps = {
     ],
     link: 'https://www.google.com/maps/dir/?api=1&destination=18.831672750593%2C-98.951060468356&fbclid=IwAR0qCU2lI1ZA-5xQPykIqtoGYs0m1-7TQxXDyypzF8zyO6RdXAudEDEtRI4',
     textLink: 'ubicacion',
+  },
+  messagearea: {
+    title: 'Mensaje De Amor Para Los Novios',
+    paragraph: [
+      'Compartir contigo este gran día hará que sea inolvidable!',
+      'Nos encantaría que compartieras algún consejo, recuerdo, cita o deseo para poder llevarte siempre con nosotros.',
+    ],
+    phname: 'Nombre',
+    phwishes: 'Mandanos tus deseos',
+    btnsubmit: 'enviar',
   },
 }
 

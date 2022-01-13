@@ -6,6 +6,7 @@ import {
   AboutUs,
   Collage,
   CardLocation,
+  MessageArea,
 } from './components'
 import DP from './data/data'
 import './App.css'
@@ -18,6 +19,7 @@ function App() {
       <CountDown {...DP.countDown} />
       <AboutUs {...DP} />
       <Collage {...DP.collage} />
+      <MessageArea {...DP.messagearea} />
       <CardLocation {...DP.cardLocation} />
     </div>
   )
