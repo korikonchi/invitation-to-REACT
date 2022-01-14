@@ -1,18 +1,22 @@
 import React from 'react'
-import CardLocation from '../card/CardLocation'
+import CardInvite from '../card-invite/CardInvite'
 
-export function MessageArea({ title, paragraph, phname, phwishes, btnsubmit }) {
+export function MessageArea({
+  title,
+  paragraphList,
+  labelarea,
+  labelwish,
+  btnsubmit,
+}) {
   return (
     <div>
-      {
-        <CardLocation
-          title={title}
-          paragraph={paragraph}
-          phname={phname}
-          phwishes={phwishes}
-          btnsubmit={btnsubmit}
-        />
-      }
+      <CardInvite
+        title={title}
+        paragraphList={paragraphList}
+        labelarea={labelarea}
+        labelwish={labelwish}
+        btnsubmit={btnsubmit}
+      />
     </div>
   )
 }

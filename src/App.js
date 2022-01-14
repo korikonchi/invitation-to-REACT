@@ -3,11 +3,10 @@ import {
   Hero,
   Intro,
   CountDown,
-  AboutUs,
+  CardAbout,
   Collage,
-  CardLocation,
+  CardInvite,
   MessageArea,
-  GiftTable,
 } from './components'
 import DP from './data/data'
 import './App.css'
@@ -15,14 +14,26 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Hero {...DP.hero} />
-      <Intro {...DP.intro} />
-      <CountDown {...DP.countDown} />
-      <AboutUs {...DP} />
-      <Collage {...DP.collage} />
+      <section>
+        <Hero {...DP.hero} />
+      </section>
+      <section>
+        <Intro {...DP.intro} />
+      </section>
+      <section>
+        <CountDown {...DP.countDown} />
+      </section>
+      <section>
+        <CardAbout {...DP.groom} />
+        <CardAbout {...DP.bride} />
+        <CardAbout {...DP.us} />
+      </section>
+      <section>
+        <Collage {...DP.collage} />
+      </section>
       <MessageArea {...DP.messagearea} />
-      <CardLocation {...DP.cardLocation} />
-      <GiftTable {...DP.gifttable} />
+      <CardInvite {...DP.cardLocation} />
+      {CardInvite(DP.giftTable)}
     </div>
   )
 }
